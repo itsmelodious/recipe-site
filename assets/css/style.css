@@ -24,6 +24,29 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
+/*
+ * GUIDE
+ */
+ #guide {
+ 	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+ }
+
+ #guide-caption {
+ 	/*size: 12px;*/
+ }
+
+ .img-scaled {
+ 	width: 50%;
+ }
+
+
+/*
+ * RECIPE GRID PAGE
+ */
 .grid {
 	display: grid;
 	grid-template-columns: 300px 300px;
