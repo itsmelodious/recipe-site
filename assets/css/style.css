@@ -6,8 +6,7 @@ body, html {
 .hero-image {
 	/*Photo by Lukas Blazek from Unsplash.*/
 	background-image: url("../img/board.jpg");
-
-	height: 50%;
+	height: 100%;
 
 	/* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -25,7 +24,25 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
-.recipe > img {
-	height: 200px;
+.grid {
+	display: grid;
+	grid-template-columns: 300px 300px;
+	grid-template-rows: 300px 300px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.item  > img {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	height: 300px;
 	width: auto;
+	overflow: hidden;
+}
+
+.item {
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
 }
