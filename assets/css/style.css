@@ -31,6 +31,7 @@ body, html {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+	grid-gap: 60px 60px;
 }
 
 .item  > img {
@@ -38,11 +39,19 @@ body, html {
 	grid-row: 1 / span 1;
 	height: 300px;
 	width: auto;
-	overflow: hidden;
 }
 
 .item {
 	height: 300px;
 	width: 300px;
 	overflow: hidden;
+	border: solid 1px black;
+	/*border: solid 1px transparent;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list {
+	text-align: center;
 }
