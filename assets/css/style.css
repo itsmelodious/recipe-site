@@ -1,6 +1,24 @@
 body, html {
 	margin: 0;
 	height: 100%;
+	background: #fafafa;
+}
+
+/*
+ * HOME PAGE
+ */
+
+.overlay {
+	background: rgba(0, 0, 0, 0.4); /* fallback for old browsers */ 
+	background: -webkit-linear-gradient(to bottom, rgba(153, 153, 153, 0.4), rgba(0, 0, 0, 0.4));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, rgba(153, 153, 153, 0.4), rgba(0, 0, 0, 0.4)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
 }
 
 .hero-image {
@@ -27,20 +45,26 @@ body, html {
 /*
  * GUIDE
  */
- #guide {
+#guide {
  	position: absolute;
 	bottom: 20px;
 	text-align: center;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 2;
  }
 
- #guide-caption {
- 	/*font-size: 12px;*/
+#guide-caption {
+ 	margin: 12px;
+ 	color: white;
  }
 
- .img-scaled {
- 	width: 50%;
+#guide-icon {
+	margin: 6px;
+}
+
+#guide-icon > svg {
+ 	fill: white;
  }
 
 
