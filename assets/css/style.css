@@ -7,11 +7,10 @@ body, html {
 /*
  * HOME PAGE
  */
-
 .overlay {
-	background: rgba(0, 0, 0, 0.4); /* fallback for old browsers */ 
-	background: -webkit-linear-gradient(to bottom, rgba(153, 153, 153, 0.4), rgba(0, 0, 0, 0.4));  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, rgba(153, 153, 153, 0.4), rgba(0, 0, 0, 0.4)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: rgba(0, 0, 0, 0.3); /* fallback for old browsers */ 
+	background: -webkit-linear-gradient(to bottom, rgba(153, 153, 153, 0.3), rgba(0, 0, 0, 0.3));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, rgba(153, 153, 153, 0.3), rgba(0, 0, 0, 0.3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -33,8 +32,12 @@ body, html {
     position: relative;
 }
 
-/* Place text in the middle of the image */
+
 .hero-text {
+	color: white;
+	z-index: 2;
+
+	/* Place text in the middle of the image */
     text-align: center;
     position: absolute;
     top: 50%;
@@ -91,6 +94,13 @@ body, html {
 /*
  * RECIPE GRID PAGE
  */
+#list {
+	margin-top: 30px;
+	padding-top: 30px;
+	text-align: center;
+	height: 100%;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 300px 300px;
@@ -122,9 +132,4 @@ body, html {
 
 #o1 > img {
 	height: 325px;
-}
-
-
-.list {
-	text-align: center;
 }
