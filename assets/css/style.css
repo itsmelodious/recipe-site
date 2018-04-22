@@ -59,10 +59,16 @@ body, html {
 	z-index: 2;
 	animation: bounce 0.5s alternate infinite;
 	color: white;
- }
+}
 
 #guide-caption {
- 	margin: 12px;
+ 	margin: 6px;
+ 	padding: 6px;
+ 	cursor: pointer;
+}
+
+.color-hover {
+	color: black;
 }
 
 #guide-icon {
@@ -74,11 +80,7 @@ body, html {
 #guide-icon > svg {
 	height: 60px;
  	fill: white;
- }
-
-#guide-icon > svg:hover {
- 	fill: black;
- }
+}
 
 /*Animation taken from WDD home page*/
 @keyframes bounce {
@@ -88,7 +90,7 @@ body, html {
  	100% {
  		transform: translateY(18px); /*CHANGE THIS VALUE LOL*/
  	}
- }
+}
 
 
 /*
