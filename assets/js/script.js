@@ -1,5 +1,8 @@
-$(window).load(function()  {
+$(document).ready(function() {
+	$(".description").addClass("hidden");
+})
 
+$(window).load(function()  {
 	$("#guide-icon, #guide-caption").click(function() { // jQuery Function Number 1
 		$("html, body").animate({ scrollTop: $("#list").offset().top }, 600); // jQuery Function Number 2 + jQuery Function Number 3
 	});
@@ -10,5 +13,11 @@ $(window).load(function()  {
 	}, function() {
 		$("#guide-caption").removeClass("color-hover"); // jQuery Function Number 7
 		$("#guide-icon > svg").css("fill", "white");
+	});
+
+	$(".item").hover(function() {
+		$(this).children(".description").removeClass("hidden");
+	}, function() {
+		$(this).children(".description").addClass("hidden");
 	});
 })
