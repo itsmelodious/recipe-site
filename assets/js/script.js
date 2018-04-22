@@ -16,8 +16,10 @@ $(window).load(function()  {
 	});
 
 	$(".item").hover(function() {
-		$(this).children(".description").removeClass("hidden");
+		// $(this).children(".description").removeClass("hidden");
+		$(this).children(".description").fadeIn("fast");
 	}, function() {
-		$(this).children(".description").addClass("hidden");
+		// $(this).children(".description").addClass("hidden");
+		$(this).children(".description").fadeOut("fast");
 	});
 })
