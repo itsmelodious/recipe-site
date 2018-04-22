@@ -59,7 +59,6 @@ body, html {
 	z-index: 2;
 	animation: bounce 0.5s alternate infinite;
 	color: white;
-	filter: drop-shadow(0px 6px 12px #000000);
 }
 
 #guide-caption {
@@ -127,11 +126,13 @@ body, html {
 	height: 300px;
 	width: 300px;
 	overflow: hidden;
-	border: solid 1px transparent;
-	box-shadow: 0px 3px 30px -10px rgba(0,0,0,0.3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.item:hover {
+	cursor: pointer;
 }
 
 #o1 > img {
@@ -152,11 +153,6 @@ body, html {
 
 .description > p {
 	padding: 0px 30px;
-}
-
-.item:hover {
-	cursor: pointer;
-	border: solid 1px black;
 }
 
 .hidden {
