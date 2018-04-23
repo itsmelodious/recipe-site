@@ -2,6 +2,12 @@ body, html {
 	margin: 0;
 	height: 100%;
 	background: #fafafa;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -14,7 +20,6 @@ body, html {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	z-index: 2;
 	top: 0px;
 	left: 0px;
 	z-index: 1;
@@ -32,10 +37,10 @@ body, html {
     position: relative;
 }
 
-
 .hero-text {
 	color: white;
 	z-index: 2;
+	font-size: 24pt;
 
 	/* Place text in the middle of the image */
     text-align: center;
@@ -44,6 +49,11 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#subtitle {
+	font-family: 'Montserrat', sans-serif;
+}
+
 
 /*
  * GUIDE
@@ -112,7 +122,7 @@ body, html {
 	left: 50%;
 	transform: translateX(-50%);
 	grid-gap: 60px 60px;
-	margin: 60px 0px 100px;
+	margin: 30px 0px 100px;
 }
 
 .item  > img {
@@ -157,4 +167,48 @@ body, html {
 
 .hidden {
 	display: none;
+}
+
+.name {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+
+/*
+ * INDIVIDUAL RECIPE PAGE
+ */
+#banner-overlay {
+	height: 60%;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#banner-image {
+	/*Photo by Lukas Blazek from Unsplash.*/
+	background-image: url("../img/lemons.jpg");
+	height: 60%;
+}
+
+.content {
+	margin: 90px 25%;
+}
+
+.part {
+	margin: 0px 0px 60px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	padding-right: 60px;
+	margin: 0px;
+}
+
+li {
+	padding: 3px 0px;
 }
