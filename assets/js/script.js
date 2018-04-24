@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 $(window).load(function()  {
 	$("#guide-icon, #guide-caption").click(function() { // jQuery Function Number 1
-		$("html, body").animate({ scrollTop: $("#list").offset().top }, 600); // jQuery Function Number 2 + jQuery Function Number 3
+		$("html, body").animate({ scrollTop: $(".about").offset().top }, 600); // jQuery Function Number 2 + jQuery Function Number 3
 	});
 
 	$("#guide-icon > svg, #guide-caption").hover(function() { // jQuery Function Number 4
