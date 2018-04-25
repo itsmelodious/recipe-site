@@ -8,10 +8,10 @@ $(window).load(function()  {
 	});
 
 	$("#guide-icon > svg, #guide-caption").hover(function() { // jQuery Function Number 4
-		$("#guide-caption").addClass("color-hover"); // jQuery Function Number 5
+		$("#guide-caption").addClass("guide-hover"); // jQuery Function Number 5
 		$("#guide-icon > svg").css("fill", "black"); // jQuery Function Number 6
 	}, function() {
-		$("#guide-caption").removeClass("color-hover"); // jQuery Function Number 7
+		$("#guide-caption").removeClass("guide-hover"); // jQuery Function Number 7
 		$("#guide-icon > svg").css("fill", "white");
 	});
 

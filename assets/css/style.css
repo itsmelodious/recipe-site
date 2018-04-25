@@ -86,7 +86,7 @@ body, html {
  	cursor: pointer;
 }
 
-.color-hover {
+.guide-hover {
 	color: black;
 }
 
@@ -250,4 +250,49 @@ li {
 	margin: 0px 0px 12px -20px;
 	text-decoration: underline;
 	font-weight: 700;
+}
+
+.back {
+	color: black;
+	width: 150px;
+	margin: 12px;
+	position: fixed;
+	bottom: 0;
+}
+
+#back-link {
+	text-decoration: none;
+}
+
+#back-link:hover {
+	text-decoration: underline;
+}
+
+#back-link:visited {
+	color: black;
+}
+
+#back-link:active {
+	color: lightgrey;
+}
+
+#back-caption:hover {
+	color: darkgrey;
+}
+
+#back-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	width: 150px;
+}
+
+#back-icon > svg {
+	height: 50px;
+	width: 50px;
+}
+
+#back-caption {
+	padding: 12px;
 }
